@@ -1,0 +1,68 @@
+body {
+    background-color: white;
+    background: url("../Images/webbackground.jpg") repeat;
+    background-size: 100em;
+    font-size: 17px;
+    color: #333639;
+    font-family: Monospace;
+}
+.header-container{
+    background: #1b4584;
+    box-shadow: 0 5px 10px #aaa;
+    height: 60px;
+}
+    .title{ 
+        color: #fff;
+        margin-top: 2%;
+        margin-left: 10%;
+        font-size: 2em;
+        font-family: sans-serif;
+    }
+    .header-nav{
+        margin-top: 3%;
+    }
+    .header-nav li{
+        margin-right: 60px;
+        font-size: 19px;
+        font-family: sans-serif;
+    }
+    .header-nav li a,a{
+        text-decoration: none;
+        color: white;
+    }
+
+.custom-h2{
+    text-align: center;
+    font-family: Tw Cen MT;
+    font-family: Lucida Calligraphy;
+    text-decoration: underline;
+    margin-top: 3%;
+    margin-bottom: 1.3%;
+}
+
+.about-body{
+    font-family: Monotype Corsiva;
+    font-size: 130%;
+}
+
+.img-circle-home {
+    height: 337px;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+.designation {
+    font-family: -webkit-body;
+    font-size: xx-large;
+}
+
+.logo img{
+    width: 30px;
+    height: 30px;
+}
+.margin-left20{
+    margin: 0 9em 0 9em;
+}
+footer{
+    margin-top: 65px; 
+}
