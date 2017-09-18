@@ -11,4 +11,4 @@ This README would normally document whatever steps are necessary to get your app
 
 * Clone the  repo
 * No Configurations
-* Open index.html
+* Open "KalburgiSrinivas_kishan(Home).html"
