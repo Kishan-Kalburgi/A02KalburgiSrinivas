@@ -8,32 +8,46 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/contact.css">
   <link rel="stylesheet" type="text/css" href="css/common.css">
+  <script src="js/vendor/jquery-1.11.2.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
 </head>
 
 <body>
   <header>
-    <div class="header-container">
-      <div class="col-sm-6">
-        <h1 class="title">Kishan Kalburgi</h1>
-      </div>
-      <div class="col-sm-6 hidden-xs">
-        <nav class="pull-right header-nav">
-          <ul class="list-inline">
-            <li><a href="./KalburgiSrinivas_kishan(Home).html">Home</a></li>
-            <li><a href="./KalburgiSrinivas_Kishan(AboutMe).html">About</a></li>
-            <li><a href="./KalburgiSrinivas_Kishan(contraption).html">My Contraption</a></li>
-            <li><a href="./KalburgiSrinivas_Kishan(Contact).html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+      <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+              <div class="navbar-header header-container">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                  <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>              
+                      </button>
+                  <a class="navbar-brand" href="./KalburgiSrinivas_kishan(Home).html">Kishan Kalburgi Srinivas</a>
+              </div>
+              <div class="collapse navbar-collapse pull-right" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                      <li><a href="./KalburgiSrinivas_kishan(Home).html">Home</a></li>
+                      <li><a href="./KalburgiSrinivas_Kishan(AboutMe).html">About</a></li>
+                      <li><a href="./KalburgiSrinivas_Kishan(JSQ).html">Know Your Past</a></li>
+                      <li class="active"><a href="./KalburgiSrinivas_Kishan(Contact).html">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
   </header>
-  <div class="col-sm-4">
-    <img class="img-contact hidden-xs" src="Images/contact.png" class="img-fluid" alt="Responsive image">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-sm-6  text-center">
+    <div class=" row hidden-xs">
+      <img class="img-contact img-fluid" src="Images/contact.png" alt="Responsive image">
+    </div>
+    <div class="row" style="margin-top:10px;">
+        <iframe width="400" height="260" src="https://www.youtube.com/embed/3sREDgCWy-I" allowfullscreen></iframe>
+    </div>
   </div>
-  <div class="col-sm-offset-7 col-xs-offset-2 margin-top-form">
-    <p>Kishan K S</p>
-    <p>(660)222-2222 | kishan.ks@hellomail.com</p>
+  <div class="col-sm-6 f-form">
+    <p class="p-form">Kishan K S</p>
+    <p class="p-form">(660)222-2222 | kishan.ks@hellomail.com</p>
 
     <form action="/action_page.php" class="col-xs-9">
       <label for="fname">First Name</label>
@@ -45,13 +59,14 @@
       <label for="query">Query</label>
       <textarea id="query" name="query" placeholder="Write Query.." style="height:100px"></textarea>
 
-      <input type="submit" value="Submit">
+      <input type="submit" class="btn btn-info" value="Submit">
 
     </form>
   </div>
-
-  <footer>
-      <p >
+  </div>
+  </div>
+  <footer class="contact-footer">
+      <div>
           <div class="col-xs-6 text-center">
           <a href="https://www.facebook.com/KS.KSHAN" target="_blank">
               <img alt="img1" src="Images/facebook.png">
@@ -76,9 +91,9 @@
           </a>
           </div>
           <div class="col-xs-6 text-center">
-              <span  style="font-family: -webkit-body"><b> Developed by KK</b></span>
+              <span  style="font-family: -webkit-body"><b>&copy;Developed by KK</b></span>
           </div>
-      </p>
+        </div>
   </footer>
 </body>
 
