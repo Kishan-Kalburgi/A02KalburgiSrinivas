@@ -2,15 +2,11 @@ nav.navbar.navbar-inverse {
     margin-bottom: 0em;
 }
 
-.row {
-    margin-top: 0em;
-}
-
 .title-contraption {
-    margin-top: 4%;
+    margin-top: 2%;
     text-align: center;
     font-size: 250%;
-    font-family: -webkit-body;
+    font-family: Lucida Calligraphy;
     text-decoration: underline;
 }
 
