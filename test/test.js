@@ -26,10 +26,6 @@
 //ok(value[, message]: An assertion that passes if the first argument is truthy;
 //throws(function [, expected ] [, message ]): Test if a callback throws an exception, and optionally compare the thrown error;
 
-QUnit.test("Here's a test that should always pass", function (assert) {
-    assert.ok(1 <= "3", "1<3 - the first agrument is 'truthy', so we pass!");
-});
-
 QUnit.test('Testing getImagePath function with several sets of inputs', function (assert) {
     assert.equal(getImagePath(1), "Images/BikeRacing26.jpg", 'Check for month 1');
     assert.equal(getImagePath(12), "Images/superman.jpg", 'Check for month 12');
@@ -42,4 +38,7 @@ QUnit.test('Testing getImagePath function with several sets of inputs for except
     assert.throws(function(){ return getImagePath(18); }, 'Input should range from 1-12.');
     assert.throws(function(){ return getImagePath(-20); }, 'Input should range from 1-12.');
     assert.throws(function(){ return getImagePath(-1); }, 'Input should range from 1-12.');
+    assert.throws(function(){ return getImagePath("String Test1"); }, 'Input should be number');
+    assert.throws(function(){ return getImagePath("String Test2"); }, 'Input should be number');
+    assert.throws(function(){ return getImagePath("String Test3"); }, 'Input should be number');
 });
