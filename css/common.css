@@ -99,7 +99,6 @@ a.navbar-brand {
 .margin-left20{
     margin: 0 9em 0 9em;
 }
-footer{
-    margin-top: 4em;
-    margin-bottom: 2em;
+.footer{
+   background-color: #0d213a;
 }
