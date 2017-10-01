@@ -14,59 +14,58 @@
 </head>
 
 <body>
-    
-        <header>
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header header-container">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header header-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>              
                         </button>
-                        <a class="navbar-brand  " href="./KalburgiSrinivas_kishan(Home).html">Kishan Kalburgi Srinivas</a>
-                    </div>
-                    <div class="collapse navbar-collapse pull-right" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li><a href="./KalburgiSrinivas_kishan(Home).html">Home</a></li>
-                            <li><a href="./KalburgiSrinivas_Kishan(AboutMe).html">About</a></li>
-                            <li class="active"><a href="./KalburgiSrinivas_Kishan(JSQ).html">Know Your Past</a></li>
-                            <li><a href="./KalburgiSrinivas_Kishan(Contact).html">Contact</a></li>
-                        </ul>
-                    </div>
+                    <a class="navbar-brand  " href="./KalburgiSrinivas_kishan(Home).html">Kishan Kalburgi Srinivas</a>
                 </div>
-            </nav>
-        </header>
-        <div class="container-fluid">
-            <div class="container ">
-                <div class="row">
-                    <div class="f-form col-xs-9 col-xs-offset-3">
-                        <h2>Who were you in a past life?</h2>
-                        <p>This program is based purely on a lighter non-invasive, non-hypnotic technique to look into your
-                            soul and discover who you were in a past life and reveal it to you now. </p>
-                      
-                            <div class="form-group">
-                                <label for="fname">First Name:</label>
-                                <input type="text" class="form-control" id="fname" placeholder="Your First name..">
-                            </div>
-                            <div class="form-group">
-                                <label for="lname">Last Name:</label>
-                                <input type="text" class="form-control" id="lname" placeholder="Your Last name..">
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="date">Date of Birth</label>
-                        <input type="text" class="form-control" id="date" placeholder="mm/dd/yyyy"> -->
-                                <h3 class="block-title"> What is your Date Of Birth & Horoscope Sign?</h3>
-                                <table class="table table-responsive borderless text-center" data-effect="fade">
-                                    <tr>
-                                        <td><span class="hl-3">Day</span>
-                                            <td><span class="hl-1">Month</span></td>
-                                            <td><span class="hl-5">Year</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select name="day" class="form-control">
-                                    <option value="d">Day</option>
+                <div class="collapse navbar-collapse pull-right" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="./KalburgiSrinivas_kishan(Home).html">Home</a></li>
+                        <li><a href="./KalburgiSrinivas_Kishan(AboutMe).html">About</a></li>
+                        <li class="active"><a href="./KalburgiSrinivas_Kishan(JSQ).html">Know Your Past</a></li>
+                        <li><a href="./KalburgiSrinivas_Kishan(Contact).html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="container ">
+            <div class="row">
+                <div class="f-form col-xs-9 col-xs-offset-3">
+                    <h2>Who were you in a past life?</h2>
+                    <p>This program is based purely on a lighter non-invasive, non-hypnotic technique to look into your soul
+                        and discover who you were in a past life and reveal it to you now. </p>
+                    <form action="javascript:myFunction()">                         
+                    <div class="form-group">
+                        <label for="fname">First Name:</label>
+                        <input type="text" class="form-control" id="fname" placeholder="Your First name.." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Your Last name..">
+                    </div>
+                    <div class="form-group">
+
+                        <h3 class="block-title"> What is your Date Of Birth & Horoscope Sign?</h3>
+                        <table class="table table-responsive borderless text-center" data-effect="fade">
+                            <tr>
+                                <td><span class="hl-3">Day</span>
+                                    <td><span class="hl-1">Month</span></td>
+                                    <td><span class="hl-5">Year</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="day" class="form-control" required> 
+                                    <option value="" readonly>Day</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -99,10 +98,10 @@
                                     <option>30</option>
                                     <option>31</option>
                                 </select>
-                                        </td>
-                                        <td>
-                                            <select id="month" name="month" class="form-control">
-                                    <option value="m">Month</option>
+                                </td>
+                                <td>
+                                    <select id="month" name="month" class="form-control" required>
+                                    <option value="" readonly>Month</option>
                                     <option value="1">January</option>
                                     <option value="2">February</option>
                                     <option value="3">March</option>
@@ -116,54 +115,55 @@
                                     <option value="11">November</option>
                                     <option value="12">December</option>
                                 </select>
-                                        </td>
-                                        <td>
-                                            <select name="year" class="form-control">
-                                    <option value="y">Year</option>
+                                </td>
+                                <td>
+                                    <select name="year" class="form-control" required>
+                                    <option value="" readonly>Year</option>
                                     <option>1927</option><option>1928</option><option>1929</option><option>1930</option><option>1931</option><option>1932</option><option>1933</option><option>1934</option><option>1935</option><option>1936</option><option>1937</option><option>1938</option><option>1939</option><option>1940</option><option>1941</option><option>1942</option><option>1943</option><option>1944</option><option>1945</option><option>1946</option><option>1947</option><option>1948</option><option>1949</option><option>1950</option><option>1951</option><option>1952</option><option>1953</option><option>1954</option><option>1955</option><option>1956</option><option>1957</option><option>1958</option><option>1959</option><option>1960</option><option>1961</option><option>1962</option><option>1963</option><option>1964</option><option>1965</option><option>1966</option><option>1967</option><option>1968</option><option>1969</option><option>1970</option><option>1971</option><option>1972</option><option>1973</option><option>1974</option><option>1975</option><option>1976</option><option>1977</option><option>1978</option><option>1979</option><option>1980</option><option>1981</option><option>1982</option><option>1983</option><option>1984</option><option>1985</option><option>1986</option><option>1987</option><option>1988</option><option>1989</option><option>1990</option><option>1991</option><option>1992</option><option>1993</option><option>1994</option><option>1995</option><option>1996</option><option>1997</option><option>1998</option><option>1999</option><option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option><option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option><option>2010</option><option>2011</option><option>2012</option><option>2013</option><option>2014</option><option>2015</option><option>2016</option><option>2017</option>					</select>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <input  class="btn btn-info" onclick="myFunction()" value="Find it out">
-                            <div id="imageLoad"></div>
-                      
+                                </td>
+                            </tr>
+                        </table>
                     </div>
+
+                    <button type="submit" class="btn btn-info" > Find it out</button>
+                    <div id="imageLoad"></div>
+                    </form>
                 </div>
             </div>
         </div>
-        
-            <footer>
+    </div>
 
-                <div class="col-xs-6 text-center">
-                    <a href="https://www.facebook.com/KS.KSHAN" target="_blank">
+    <footer>
+
+        <div class="col-xs-6 text-center">
+            <a href="https://www.facebook.com/KS.KSHAN" target="_blank">
                     <img alt="img1" src="Images/facebook.png">
                 </a>
-                    <a href="https://www.instagram.com/kishan__ks" target="_blank">
+            <a href="https://www.instagram.com/kishan__ks" target="_blank">
                     <img alt="img2" src="Images/instagram.png">
                 </a>
-                    <a href="https://plus.google.com/u/0/+kishankskk" target="_blank">
+            <a href="https://plus.google.com/u/0/+kishankskk" target="_blank">
                     <img alt="img3" src="Images/google-plus.png">
                 </a>
-                    <a href="https://bitbucket.org/Kishan_Kalburgi/" target="_blank">
+            <a href="https://bitbucket.org/Kishan_Kalburgi/" target="_blank">
                     <img alt="img3" src="Images/bitbucket.png">
                 </a>
-                    <a href="https://github.com/S530468" target="_blank">
+            <a href="https://github.com/S530468" target="_blank">
                     <img alt="img3" src="Images/github.png">
                 </a>
-                    <a href="https://www.linkedin.com/in/kishan-ks/" target="_blank">
+            <a href="https://www.linkedin.com/in/kishan-ks/" target="_blank">
                     <img alt="img3" src="Images/linkedin.png">
                 </a>
-                    <a href="https://www.youtube.com/channel/UCdY0Lpb1sjSZzu8TWwDp6lw?view_as=subscriber" target="_blank">
+            <a href="https://www.youtube.com/channel/UCdY0Lpb1sjSZzu8TWwDp6lw?view_as=subscriber" target="_blank">
                     <img alt="img3" src="Images/youtube.png">
                 </a>
-                </div>
-                <div class="col-xs-6 text-center">
-                    <span style="font-family: -webkit-body"><b>&copy;Developed by KK</b></span>
-                </div>
-            </footer>
-        
-    
+        </div>
+        <div class="col-xs-6 text-center">
+            <span style="font-family: -webkit-body"><b>&copy;Developed by KK</b></span>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
