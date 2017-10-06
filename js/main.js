@@ -21,7 +21,7 @@ function getImagePath(month) {
     var imgSrc;
     switch (month) {
         case 1:
-            imgSrc = "Images/BikeRacing26.jpg";
+            imgSrc = "../Images/BikeRacing26.jpg";
             break;
         case 2:
             imgSrc = "Images/birds.jpg";
